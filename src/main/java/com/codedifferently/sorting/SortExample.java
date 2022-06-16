@@ -1,4 +1,4 @@
-package com.codedifferently;
+package com.codedifferently.sorting;
 
 public class SortExample {
 

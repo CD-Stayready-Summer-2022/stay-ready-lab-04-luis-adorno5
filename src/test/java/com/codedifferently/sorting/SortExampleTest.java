@@ -1,5 +1,6 @@
-package com.codedifferently;
+package com.codedifferently.sorting;
 
+import com.codedifferently.sorting.SortExample;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
