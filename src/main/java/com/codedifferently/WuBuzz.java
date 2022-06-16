@@ -28,14 +28,14 @@ public class WuBuzz {
      */
 
     public String wuTangClan(int n){
-        StringBuilder output = new StringBuilder();
+        StringBuilder wuBuzzMessage = new StringBuilder();
         for(int i = 1; i <= n; i++){
-            output.append(checkNumber(i)).append("\n");
+            wuBuzzMessage.append(getWuTangMsgOrNumber(i)).append("\n");
         }
-        return output.toString();
+        return wuBuzzMessage.toString();
     }
 
-    private String checkNumber(int number){
+    private String getWuTangMsgOrNumber(int number){
         if(isMultipleOfThree(number) && isMultipleOfFive(number))
             return "WuTang Forever";
         else if(isMultipleOfThree(number))
