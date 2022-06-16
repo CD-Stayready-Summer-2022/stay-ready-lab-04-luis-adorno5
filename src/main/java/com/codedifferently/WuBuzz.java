@@ -24,10 +24,33 @@ public class WuBuzz {
      * Wu
      * 13
      * 14
-     * WuTangForever
+     * WuTang Forever
      */
 
     public String wuTangClan(int n){
-        return null;
+        StringBuilder output = new StringBuilder();
+        for(int i = 1; i <= n; i++){
+            output.append(checkNumber(i)).append("\n");
+        }
+        return output.toString();
+    }
+
+    private String checkNumber(int number){
+        if(isMultipleOfThree(number) && isMultipleOfFive(number))
+            return "WuTang Forever";
+        else if(isMultipleOfThree(number))
+            return "Wu";
+        else if(isMultipleOfFive(number))
+            return "Tang";
+        else
+            return number+"";
+    }
+
+    private Boolean isMultipleOfThree(int number){
+        return number % 3 == 0;
+    }
+
+    private Boolean isMultipleOfFive(int number){
+        return number % 5 == 0;
     }
 }
